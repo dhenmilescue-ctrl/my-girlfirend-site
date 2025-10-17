@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Girlfriend</title>
+  <style>
+    body {
+      background-color: crimson;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      padding: 40px;
+    }
+    section {
+      padding: 20px;
+    }
+    button {
+      background-color: white;
+      color: crimson;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: pink;
+    }
+    .message {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>💘 Meet My Girlfriend</h1>
+    <p>She's amazing, and here's why...</p>
+  </header>
+
+  <section>
+    <h2>🌟 Her Qualities</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li>✨ Kind and Thoughtful</li>
+      <li>🎨 Creative and Artistic</li>
+      <li>🎶 Loves food as much as I do</li>
+      <li>📚 Smart and Curious</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>💬 Interactive Zone</h2>
+    <button onclick="showMessage('She makes me laugh every day!')">Make Me Smile</button>
+    <button onclick="showMessage('She inspires me to be better.')">Make Me Think</button>
+    <button onclick="showMessage('She’s the best part of my day.')">Make Me Feel</button>
+    <div class="message" id="output"></div>
+  </section>
+
+  <section>
+    <h2>📸 Our Memories</h2>
+    <p>Coming soon: a gallery of our favorite moments together!</p>
+  </section>
+
+  <footer style="padding: 20px;">
+    <p>Made with ❤️ by Miles</p>
+  </footer>
+
+  <script>
+    function showMessage(text) {
+      document.getElementById("output").innerText = text;
+    }
+  </script>
+
+</body>
+</html>
